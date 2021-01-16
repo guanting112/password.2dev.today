@@ -188,10 +188,14 @@ export default {
 
   a {
     display: inline-block;
+    overflow: hidden;
     color: white;
-    font-size: 32px;
+    font-size: 24px;
 
-    padding: 0.125em;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+
     border: 1px solid #e91e63;
     background-color: #e91e63;
     border-radius: 50%;

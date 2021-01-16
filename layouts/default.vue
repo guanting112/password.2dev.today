@@ -23,4 +23,7 @@ html, input {
   margin: 0;
 }
 
+body {
+  background-color: #FAFAFA;
+}
 </style>
