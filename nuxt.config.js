@@ -3,7 +3,7 @@ export default {
   target: 'static',
   router: {
     base: '/password.2dev.today/'
-  }
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
