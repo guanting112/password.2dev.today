@@ -187,6 +187,7 @@ export default {
   margin-bottom: 1em;
 
   a {
+    display: inline-block;
     color: white;
     font-size: 32px;
 
@@ -194,6 +195,14 @@ export default {
     border: 1px solid #e91e63;
     background-color: #e91e63;
     border-radius: 50%;
+    transition: all .3s ease;
+    transform: rotate(0);
+
+    &:hover {
+      opacity: 0.5;
+      background-color: darken(#e91e63, 3%);
+      transform: rotate(90deg);
+    }
   }
 }
 
