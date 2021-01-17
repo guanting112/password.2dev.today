@@ -234,6 +234,7 @@ dl {
       span[class^=label] {
         display: inline-block;
         font-size: 20px;
+        font-weight: bold;
         color: white;
         border-radius: 3px;
 
@@ -242,27 +243,27 @@ dl {
         padding: 0.25em;
 
         &.label-6 {
-          background-color: fade-out(#49599a, 0.4);
+          background-color: #ff867c;
         }
 
         &.label-8 {
-          background-color: fade-out(#49599a, 0.4);
+          background-color: #ef5350;
         }
 
         &.label-12 {
-          background-color: fade-out(#3f51b5, 0.4);
+          background-color: #66bb6a;
         }
 
         &.label-16 {
-          background-color: fade-out(#3949ab, 0.2);
+          background-color: #66bb6a;
         }
 
         &.label-24 {
-          background-color: fade-out(#3949ab, 0.2);
+          background-color: #3949ab;
         }
 
         &.label-32, &.label-36 {
-          background-color: #283593;
+          background-color: #3949ab;
         }
       }
 
