@@ -3,13 +3,12 @@
     ref="main"
     class="password-text"
   >
-    <input
-      v-model="passwordText"
+    <div
       :class="classObject"
-      type="text"
-      readonly="readonly"
       @click="doCopy"
-    />
+    >
+      {{ passwordText }}
+    </div>
   </div>
 </template>
 
@@ -100,7 +99,7 @@ export default {
   display: inline-block;
 }
 
-.password-text input {
+.password-text > div {
   outline: none;
   display: inline-block !important;
 
