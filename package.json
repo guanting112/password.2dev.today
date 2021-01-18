@@ -12,6 +12,7 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "core-js": "^3.6.5",
     "generate-password": "^1.6.0",
     "gsap": "^3.6.0",

@@ -45,9 +45,20 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/google-gtag'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  'google-gtag': {
+    id: 'G-PK34C67LD4',
+    config: {
+      anonymize_ip: true, // anonymize IP 
+      send_page_view: false // might be necessary to avoid duplicated page track on page reload
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false
   }
 }
