@@ -1,0 +1,209 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>Random Password/UUID Generator</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content="create strong password for all your online account."><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap"><link data-n-head="ssr" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"><script data-n-head="ssr" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script><script data-n-head="ssr" src="https://www.googletagmanager.com/gtag/js?id=G-PK34C67LD4" async></script><link rel="preload" href="/_nuxt/346d72c.js" as="script"><link rel="preload" href="/_nuxt/71b5397.js" as="script"><link rel="preload" href="/_nuxt/5ab496d.js" as="script"><link rel="preload" href="/_nuxt/6f49548.js" as="script"><link rel="preload" href="/_nuxt/8e20f49.js" as="script"><link rel="preload" href="/_nuxt/13f1bca.js" as="script"><style data-vue-ssr-id="fa7ff0ca:0 56b15182:0 28f1127f:0 717b9675:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}html,input{font-family:"IBM Plex Mono","Helvetica Neue",Arial,sans-serif;font-size:15px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box}*,:after,:before{box-sizing:border-box;margin:0}body{background-color:#fafafa;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.container{width:100%;max-width:1000px;margin:0 auto;padding:4em 1em}.refresh{padding:.5em 0;margin-bottom:1em}.refresh a{display:inline-block;overflow:hidden;color:#fff;font-size:24px;width:48px;line-height:48px;text-align:center;border:1px solid #e91e63;background-color:#e91e63;border-radius:50%;transition:all .3s ease;transform:rotate(0)}.refresh a:hover{opacity:.5;background-color:#e2165b;transform:rotate(90deg)}h1{font-size:48px;margin-bottom:.125em}h2{margin-bottom:.5em}dl>dt,h2{font-size:18px}dl>dt{font-weight:700;color:#fff;background-color:#000;padding:.5em 1em}dl>dd>div{padding:.5em 0;border-bottom:1px dashed hsla(0,0%,50.2%,.5)}dl>dd>div span[class^=label]{display:inline-block;font-size:20px;font-weight:700;color:#fff;border-radius:3px;width:2em;text-align:center;padding:.25em}dl>dd>div span[class^=label].label-6{background-color:#ff867c}dl>dd>div span[class^=label].label-8{background-color:#ef5350}dl>dd>div span[class^=label].label-12,dl>dd>div span[class^=label].label-16{background-color:#66bb6a}dl>dd>div span[class^=label].label-24,dl>dd>div span[class^=label].label-32,dl>dd>div span[class^=label].label-36{background-color:#3949ab}dl>dd>div:last-child{border-width:0!important}.copyright{margin-top:6em;text-align:center}.copyright a.author,.copyright a.url{color:#000;font-size:24px;font-weight:700;text-decoration:none}.copyright a.author{font-size:48px}.password-text[data-v-9ef16626]{display:inline-block}.password-text>div[data-v-9ef16626]{outline:0;display:inline-block!important;padding:.25em .5em;margin-top:.25em;margin-bottom:.25em;font-size:18px;font-weight:700;color:#212121;background-color:#eee;border:none}.password-text>div[data-v-9ef16626]:hover{color:#fff;background-color:#c1134e}.password-text>div.length-6[data-v-9ef16626]{width:5.5em}.password-text>div.length-8[data-v-9ef16626]{width:6.5em}.password-text>div.length-12[data-v-9ef16626]{width:9em}.password-text>div.length-16[data-v-9ef16626]{width:12em}.password-text>div.length-24[data-v-9ef16626]{width:16em}.password-text>div.length-32[data-v-9ef16626]{width:22em}.password-text>div.length-36[data-v-9ef16626]{width:24em}</style><link rel="preload" href="/_nuxt/static/1610994320/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1610994320/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div class="container"><h1>Random Password/UUID Generator</h1> <h2>create strong password for your online account.</h2> <p class="refresh"><a href="/"><i class="fas fa-fw fa-sync-alt"></i></a></p> <dl><dt><i class="fas fa-key"></i> UUID v4</dt> <dd><div><span class="label-36">36</span> <div class="password-text" data-v-9ef16626><div class="length-36" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-36" data-v-9ef16626>
+    
+  </div></div></div> <div><span class="label-36">36</span> <div class="password-text" data-v-9ef16626><div class="length-36" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-36" data-v-9ef16626>
+    
+  </div></div></div></dd> <dt><i class="fas fa-key"></i> abc ABC 123</dt> <dd><div><span class="label-6">6</span> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-8">8</span> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-12">12</span> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-16">16</span> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-24">24</span> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-32">32</span> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div></div></dd> <dt><i class="fas fa-key"></i> abc ABC 123 @%=#</dt> <dd><div><span class="label-6">6</span> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-8">8</span> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-12">12</span> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-16">16</span> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-24">24</span> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-32">32</span> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div></div></dd> <dt><i class="fas fa-key"></i> abc 123</dt> <dd><div><span class="label-6">6</span> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-8">8</span> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-12">12</span> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-16">16</span> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-24">24</span> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-32">32</span> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div></div></dd> <dt><i class="fas fa-key"></i> 123</dt> <dd><div><span class="label-6">6</span> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-6" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-8">8</span> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-8" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-12">12</span> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-12" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-16">16</span> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-16" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-24">24</span> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-24" data-v-9ef16626>
+    
+  </div></div></div><div><span class="label-32">32</span> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div> <div class="password-text" data-v-9ef16626><div class="length-32" data-v-9ef16626>
+    
+  </div></div></div></dd></dl> <div class="copyright"><p><a href="//password.2dev.today" class="url">//password.2dev.today</a></p> <p><a href="https://github.com/guanting112" class="author"><i class="fab fa-github-square"></i></a></p></div></div></div></div></div><script>window.__NUXT__={staticAssetsBase:"/_nuxt/static/1610994320",layout:"default",error:null,serverRendered:!0,routePath:"/",config:{}}</script><script src="/_nuxt/346d72c.js" defer></script><script src="/_nuxt/8e20f49.js" defer></script><script src="/_nuxt/13f1bca.js" defer></script><script src="/_nuxt/71b5397.js" defer></script><script src="/_nuxt/5ab496d.js" defer></script><script src="/_nuxt/6f49548.js" defer></script>
+  </body>
+</html>
